@@ -2,14 +2,17 @@
 #include <string>
 
 using namespace std;
+
+string concatenarCadenas(const string& str1, const string& str2) {
+    return str1 + str2;
+}
+
 int main() {
-    string str1 = "Hola ";
-    string str2 = "mundo!";
-    
-    string str3 = str1;
-    str3.append(str2);
-    
-    cout << "Cadena resultante: " << str3 << endl;
+    string saludo = "Hola ";
+    string mundo = "mundo!";
+    string resultado = concatenarCadenas(saludo, mundo);
+
+    cout << "Cadena resultante: " << resultado << endl;
 
     return 0;
 }
