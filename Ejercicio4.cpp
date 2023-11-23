@@ -10,7 +10,7 @@ int main() {
     size_t pos = sentence.find(sub_str);
 
     if (pos != string::npos) {
-        cout << "Subcadena encontrada en la posición: " << pos << endl;
+        cout << "Subcadena encontrada en la posicion: " << pos << endl;
         sentence.replace(pos, sub_str.length(), "Python");
         cout << "Cadena resultante: " << sentence << endl;
     } else {
