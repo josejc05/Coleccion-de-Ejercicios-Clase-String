@@ -2,13 +2,21 @@
 #include <string>
 
 using namespace std;
+void mostrarFrase(const string& frase) {
+    cout << "Frase: " << frase << endl;
+}
+
+void mostrarInfoCadena(const string& cadena) {
+    cout << "Tamano de la cadena: " << cadena.size() << endl;
+    cout << "¿Esta la cadena vacia? " << (cadena.empty() ? "Si" : "No") << endl;
+}
+
 int main() {
     string phrase = "Hello, World!";
-    cout << "Frase: " << phrase << std::endl;
-
+    mostrarFrase(phrase);
+    
     string sentence = "OpenAI is a leading AI research lab.";
-    cout << "Tamano de la cadena: " << sentence.size() << std::endl;
-    cout << "¿Esta la cadena vacia? " << (sentence.empty() ? "Si" : "No") << std::endl;
+    mostrarInfoCadena(sentence);
 
     return 0;
 }
