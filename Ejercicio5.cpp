@@ -1,13 +1,24 @@
 #include <iostream>
 #include <string>
 
-int main() {
-    std::string str = "Inteligencia Artificial";
-    std::string sub_str = str.substr(13, 9);
-    std::string new_str = str.insert(0, "La ");
+using namespace std;
 
-    std::cout << "Subcadena: " << sub_str << std::endl;
-    std::cout << "Cadena resultante: " << new_str << std::endl;
+string extraerSubcadena(const string& cadena, size_t inicio, size_t longitud) {
+    return cadena.substr(inicio, longitud);
+}
+
+string insertarPrefijo(const string& cadena, const string& prefijo) {
+    return prefijo + cadena;
+}
+
+int main() {
+    const string textoOriginal = "Inteligencia Artificial";
+    const string subcadenaExtraida = extraerSubcadena(textoOriginal, 13, 9);
+    const string resultadoFinal = insertarPrefijo(textoOriginal, "La ");
+
+    cout << "Cadena original: " << textoOriginal << '\n'
+         << "Subcadena extraida: " << subcadenaExtraida << '\n'
+         << "Resultado final: " << resultadoFinal << '\n';
 
     return 0;
 }
