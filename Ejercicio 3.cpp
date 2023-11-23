@@ -3,16 +3,16 @@
 
 using namespace std;
 
-string concatenarCadenas(const string& str1, const string& str2) {
-    return str1 + str2;
-}
-
 int main() {
-    string saludo = "Hola ";
-    string mundo = "mundo!";
-    string resultado = concatenarCadenas(saludo, mundo);
+    string saludo = "Hola, ¿cómo has estado?";
+    string respuesta = "Bien, gracias. ¿Y tú?";
+    string respuesta2 = "Muy bien, ¿has tenido un buen día?";
+    string respuesta3 = "Sí, ha sido productivo. ¿Y tú?";
+    string despedida = "Genial. ¡Hasta luego!";
 
-    cout << "Cadena resultante: " << resultado << endl;
+    string conversacion = saludo + " " + respuesta + " " + respuesta2 + " " + respuesta3 + " " + despedida;
+
+    cout << "Conversación: " << conversacion << endl;
 
     return 0;
 }
